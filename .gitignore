@@ -31,3 +31,6 @@ proguard/
 
 # Android Studio captures folder
 captures/
+
+# Mac DS
+.DS_Store
