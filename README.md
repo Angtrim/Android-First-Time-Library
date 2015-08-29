@@ -40,6 +40,11 @@ Then add this in your Activity where you want the method to be called.
 
     FirstTimer.invoke(this);
 
+## How it works
+
+The library is very simple.
+It just saves a boolean in the SHARED PREFERENCES to check if it's the first time.
+
 
 ## License
 
