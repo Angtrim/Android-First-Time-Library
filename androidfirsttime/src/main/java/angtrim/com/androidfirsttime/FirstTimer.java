@@ -42,6 +42,10 @@ public class FirstTimer {
 
     }
 
+    /**
+     * Looks for annotated methods
+     * @param object The object that should have annotated methods
+     */
     private static void invokeFirstTimers(Object object) {
         Method[] methods = object.getClass().getMethods();
         for (Method method : methods) {
