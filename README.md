@@ -40,6 +40,18 @@ Then add this in your Activity where you want the method to be called.
 
     FirstTimer.invoke(this);
 
+
+Or do :
+
+       public void myOnlyOnceMethod(){
+
+           if(FirstTimer.isFirstTime(this)){
+
+               Toast.makeText(this,"Only Once",Toast.LENGTH_LONG).show();
+
+           }
+       }
+
 ## How it works
 
 The library is very simple.
