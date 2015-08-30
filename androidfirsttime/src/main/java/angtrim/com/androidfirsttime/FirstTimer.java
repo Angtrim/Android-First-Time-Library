@@ -29,10 +29,8 @@ public class FirstTimer {
      * @param object An object with @FistTimeOnly annotated methods
      */
     public static void invoke(Context context,Object object){
-        /* Check if is first time */
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean isFirstTime = sharedPref.getBoolean(SHARED_PREF_STRING, true);
-        if(isFirstTime){
+        if(isFirstTime(context)){
             invokeFirstTimers(object);
             SharedPreferences.Editor editor = sharedPref.edit();
             editor.putBoolean(SHARED_PREF_STRING, false);
@@ -40,6 +38,18 @@ public class FirstTimer {
         }
 
 
+    }
+
+    /**
+     * Check if is the first time that the user open the app
+     * @param context An Android Context, to get the shared preferences
+     * @return if is the first time
+     */
+    public static boolean isFirstTime(Context context){
+        /* Check if is first time */
+        SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean isFirstTime = sharedPref.getBoolean(SHARED_PREF_STRING, true);
+        return isFirstTime;
     }
 
     /**
