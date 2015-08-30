@@ -9,13 +9,16 @@ Android First Time Library is a really small library that helps you when you hav
 
 To use the library, first include it your project using Gradle
 
-	repositories {
-	    // ...
-	    maven { url "https://jitpack.io" }
-	}
+
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
+    }
 
 	dependencies {
-	        compile 'com.github.Angtrim:Android-First-Time-Library:1.0'
+	        compile 'com.github.Angtrim:Android-First-Time-Library:1.1'
 	}
 
 
@@ -56,6 +59,11 @@ Or do :
 
 The library is very simple.
 It just saves a boolean in the SHARED PREFERENCES to check if it's the first time.
+
+## Used by
+
+If you use my library, please tell me at angelo.gallarello [at] gmail [dot] com.
+So I can add your app here!
 
 
 ## License
