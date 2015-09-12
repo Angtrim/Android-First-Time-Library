@@ -18,7 +18,7 @@ To use the library, first include it your project using Gradle
     }
 
 	dependencies {
-	        compile 'com.github.Angtrim:Android-First-Time-Library:1.1'
+	        compile 'com.github.Angtrim:Android-Five-Stars-Library:v1.0'
 	}
 
 
